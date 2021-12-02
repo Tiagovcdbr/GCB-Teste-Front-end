@@ -28,5 +28,4 @@ const Home: React.FC = () => {
     </Container>
   );
 };
-
 export { Home };
