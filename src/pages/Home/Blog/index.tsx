@@ -6,14 +6,13 @@ import itemImage2 from '../../../assets/images/bloco_image_2.svg';
 import itemImage3 from '../../../assets/images/bloco_image_3.svg';
 import itemImage4 from '../../../assets/images/bloco_image_4.svg';
 import { Card } from '../../../components';
-import { Container } from './styles';
-
+/* Import de Imagens criadas para fazer o import dentro img src
+ou até mesmo usando um const OwnerImg */
 import autorImage from '../../../assets/images/autor1.svg';
 import autorImag2 from '../../../assets/images/autor2.svg';
 import autorImag3 from '../../../assets/images/autor3.svg';
 import autorImag4 from '../../../assets/images/autor4.svg';
-
-
+// Swiper slide para fazer o slide das imagens contendo as comidas estilo carrousel
 const Blog: React.FC = () => {
   return (
     <Container id="blog">
@@ -24,7 +23,7 @@ const Blog: React.FC = () => {
           Vokalia and Consonantia, there live the blind texts.
         </p>
       </header>
-
+      
       <div>
         <Swiper
           slidesOffsetBefore={24}
@@ -103,5 +102,42 @@ const Blog: React.FC = () => {
     </Container>
   );
 };
-
+// Fim do Swiper slide e seus filhos
 export { Blog };
+
+import styled from 'styled-components';
+/* Estilizando o Container com o styled components dentro do próprio arquivo mas
+tem a opção de criar um arquivo ts separado para fazer isso */
+const Container = styled.section`
+  padding: 3.2rem 0 8rem;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: var(--cll-background-darker);
+
+  header {
+    text-align: center;
+
+    p {
+      margin-top: 1rem;
+      max-width: 26rem;
+      color: var(--cll-text-darker);
+    }
+  }
+
+  > div {
+    margin-top: 4rem;
+    width: 100%;
+    max-width: 90rem;
+
+    .swiper-container {
+      overflow: visible;
+    }
+  }
+`;
+
+// Fim da estilização Container
+
