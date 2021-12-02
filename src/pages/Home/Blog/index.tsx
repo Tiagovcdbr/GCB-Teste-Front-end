@@ -2,11 +2,17 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import itemImage from '../../../assets/images/blog_image_1.svg';
+import itemImage2 from '../../../assets/images/bloco_image_2.svg';
+import itemImage3 from '../../../assets/images/bloco_image_3.svg';
+import itemImage4 from '../../../assets/images/bloco_image_4.svg';
 import { Card } from '../../../components';
 import { Container } from './styles';
 
-const ownerImage =
-  'https://ui-avatars.com/api/?size=128&background=FF9900&color=fff&name=Mike%20Jackson';
+import autorImage from '../../../assets/images/autor1.svg';
+import autorImag2 from '../../../assets/images/autor2.svg';
+import autorImag3 from '../../../assets/images/autor3.svg';
+import autorImag4 from '../../../assets/images/autor4.svg';
+
 
 const Blog: React.FC = () => {
   return (
@@ -51,7 +57,19 @@ const Blog: React.FC = () => {
               imageSrc={itemImage}
             >
               <div>
-                <img src={ownerImage} alt="Mike Jackson" />
+              <img src={autorImage} alt=""/>
+                <span>Kevin Ibrahim</span>
+              </div>
+            </Card>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Card
+              text="Nutrition: Tips for Improving Your Health"
+              imageSrc={itemImage2}
+            >
+              <div>
+                <img src={autorImag2} alt="" />
                 <span>Mike Jackson</span>
               </div>
             </Card>
@@ -60,11 +78,11 @@ const Blog: React.FC = () => {
           <SwiperSlide>
             <Card
               text="Nutrition: Tips for Improving Your Health"
-              imageSrc={itemImage}
+              imageSrc={itemImage3}
             >
               <div>
-                <img src={ownerImage} alt="Mike Jackson" />
-                <span>Mike Jackson</span>
+                <img src={autorImag3} alt="" />
+                <span>Bryan McGregor</span>
               </div>
             </Card>
           </SwiperSlide>
@@ -72,35 +90,11 @@ const Blog: React.FC = () => {
           <SwiperSlide>
             <Card
               text="Nutrition: Tips for Improving Your Health"
-              imageSrc={itemImage}
+              imageSrc={itemImage4}
             >
               <div>
-                <img src={ownerImage} alt="Mike Jackson" />
-                <span>Mike Jackson</span>
-              </div>
-            </Card>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <Card
-              text="Nutrition: Tips for Improving Your Health"
-              imageSrc={itemImage}
-            >
-              <div>
-                <img src={ownerImage} alt="Mike Jackson" />
-                <span>Mike Jackson</span>
-              </div>
-            </Card>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <Card
-              text="Nutrition: Tips for Improving Your Health"
-              imageSrc={itemImage}
-            >
-              <div>
-                <img src={ownerImage} alt="Mike Jackson" />
-                <span>Mike Jackson</span>
+                <img src={autorImag4} alt="" />
+                <span>Jash</span>
               </div>
             </Card>
           </SwiperSlide>

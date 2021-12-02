@@ -12,5 +12,4 @@ const App: React.FC = () => {
     </Router>
   );
 };
-
 export { App };

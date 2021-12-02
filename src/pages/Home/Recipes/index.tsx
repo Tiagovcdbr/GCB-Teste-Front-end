@@ -5,6 +5,9 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import itemImage from '../../../assets/images/comida_1.png';
+import itemImage2 from '../../../assets/images/comida_2.png';
+import itemImage3 from '../../../assets/images/comida_3.png';
+import itemImage4 from '../../../assets/images/comida_4.png';
 import { Button, Card } from '../../../components';
 import { Container } from './styles';
 
@@ -52,19 +55,19 @@ const Recipes: React.FC = () => {
           </SwiperSlide>
 
           <SwiperSlide>
-            <Card text="Broccoli Salad with Bacon" imageSrc={itemImage}>
+            <Card text="Broccoli Salad with Bacon" imageSrc={itemImage2}>
               <Button type="button">See Recipe</Button>
             </Card>
           </SwiperSlide>
 
           <SwiperSlide>
-            <Card text="Broccoli Salad with Bacon" imageSrc={itemImage}>
+            <Card text="Broccoli Salad with Bacon" imageSrc={itemImage3}>
               <Button type="button">See Recipe</Button>
             </Card>
           </SwiperSlide>
 
           <SwiperSlide>
-            <Card text="Broccoli Salad with Bacon" imageSrc={itemImage}>
+            <Card text="Broccoli Salad with Bacon" imageSrc={itemImage4}>
               <Button type="button">See Recipe</Button>
             </Card>
           </SwiperSlide>
@@ -82,7 +85,7 @@ const Recipes: React.FC = () => {
 
         <Card
           text="Broccoli Salad with Bacon"
-          imageSrc={itemImage}
+          imageSrc={itemImage2}
           type="inline"
         >
           <Button type="button">See Recipe</Button>
@@ -90,7 +93,7 @@ const Recipes: React.FC = () => {
 
         <Card
           text="Broccoli Salad with Bacon"
-          imageSrc={itemImage}
+          imageSrc={itemImage3}
           type="inline"
         >
           <Button type="button">See Recipe</Button>
@@ -98,7 +101,7 @@ const Recipes: React.FC = () => {
 
         <Card
           text="Broccoli Salad with Bacon"
-          imageSrc={itemImage}
+          imageSrc={itemImage4}
           type="inline"
         >
           <Button type="button">See Recipe</Button>

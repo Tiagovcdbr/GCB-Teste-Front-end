@@ -35,7 +35,7 @@ const About: React.FC = () => {
 };
 
 export { About };
-// Eslizano o About por meio do styled components
+// Estilizando o About por meio do styled components
 const Container = styled.section`
   width: 100vw;
   height: var(--section-height);
@@ -95,4 +95,6 @@ const Container = styled.section`
     }
   }
 `;
+
+// Fim da Estilização 
 
