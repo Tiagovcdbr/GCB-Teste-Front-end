@@ -1,5 +1,5 @@
 import styled, { css, keyframes } from 'styled-components';
-
+// Por boas práticas o arquivo style.ts vai ser mantido pois a estilização ficou extensa
 interface IContainerProps {
   navOpen: boolean;
   navShowing: boolean;

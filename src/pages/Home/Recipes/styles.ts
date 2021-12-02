@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+// Por boas práticas a estilização Recipes vai ficar aqui pois o código ficou extenso
 export const Container = styled.section`
   padding: 3.2rem 0 8rem;
   width: 100vw;
@@ -48,3 +48,5 @@ export const Container = styled.section`
     }
   }
 `;
+
+// Fim da estilização

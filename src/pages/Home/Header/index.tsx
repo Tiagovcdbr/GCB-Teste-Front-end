@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 import { Button } from '../../../components';
 import { Container } from './styles';
-
+// Construção do Menu Hamburguer 
 const Header: React.FC = () => {
   const [navOpen, setNavOpen] = useState(false);
   const [navShowing, setNavShowing] = useState(false);
@@ -38,7 +38,7 @@ const Header: React.FC = () => {
       setNavShowing(false);
     }, 600);
   };
-
+  // Fim do menu Hamburguer
   return (
     <Container
       navOpen={navOpen}

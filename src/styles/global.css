@@ -99,7 +99,8 @@ a,
 button {
   cursor: pointer;
 }
-
+/*  Responsividade aplicada à pagina em escala global ou seja
+a maior parte do projeto */
 @media (min-width: 480px) {
   :root {
     --padding-lateral: 4.8rem;
@@ -137,3 +138,4 @@ button {
     font-size: 100%;
   }
 }
+ /*  Fim da estilização Global com todas os @medias queries */
