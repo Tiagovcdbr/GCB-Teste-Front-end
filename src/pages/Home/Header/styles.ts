@@ -31,6 +31,7 @@ export const Container = styled.header<IContainerProps>`
 
   transition: background 0.4s;
 
+
   ${props =>
     props.windowScrolled &&
     css`
@@ -211,6 +212,7 @@ export const Container = styled.header<IContainerProps>`
 
             li:last-child {
               transform: translateY(-0.35rem) rotate(-45deg);
+              background: white;
             }
 
             li:nth-child(2) {
@@ -220,17 +222,28 @@ export const Container = styled.header<IContainerProps>`
         `};
     }
   }
-  li:last-child{
+  
+  li:last-child{    
     width: 110px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius:4px;
-    border: white;
     color: white;
     cursor:pointer;
+
+    color: ${props =>
+      props.windowScrolled
+        ? 'var(--cll-primary)'
+        : 'var(--cll-in-primary)'};
+    font-weight: 700;
+    text-transform: uppercase;
+
+    transition: color 0.2s;
+    
   }
+  
 
   @media (min-width: 1200px) {
     nav {
@@ -242,3 +255,4 @@ export const Container = styled.header<IContainerProps>`
     }
   }
 `;
+
