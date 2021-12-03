@@ -19,7 +19,7 @@ const Home = () => {
 
   const [nomeCookie, setNomeCookie] = useCookies(["nome"]);
   const [dataNasCookie, setDataNasCookie] = useCookies(["dataNasc"]);
-  const [enderecoCookie, setEnderecoCookie] = useCookies(["endereço"]);
+  const [enderecoCookie, setEnderecoCookie] = useCookies(["endereco"]);
   const [bairroCookie, setBairroCookie] = useCookies(["bairro"]);
   const [cidadeCookie, setCidadeCookie] = useCookies(["cidade"]);
   const [ufCookie, setUfCookie] = useCookies(["uf"]);
@@ -52,6 +52,71 @@ const Home = () => {
     [nomeCookie, dataNasCookie, ufCookie, enderecoCookie, bairroCookie, cidadeCookie, cpfCookie, cepCookie]
   );
 
-  
+  const handleSignup = useCallback(
+    async () => {
+      const isValid = validate(cpf);
+
+      console.log(nome, dataNas, cep, endereco, bairro, cidade, uf);
+
+      if (isValid) {
+        if (nome === '' || dataNas === '' || cep === '' || endereco === '' || bairro === '' || cidade === '' || uf === '') {
+          alert('Preencha todos os campos')
+        } else {
+          localStorage.setItem('nome', nome);
+          localStorage.setItem('dataNasc', dataNas);
+          localStorage.setItem('cpf', cpf);
+          localStorage.setItem('endereco', endereco);
+          localStorage.setItem('bairro', bairro);
+          localStorage.setItem('cidade', cidade);
+          localStorage.setItem('uf', uf);
+          localStorage.setItem('cep', cep);
+
+          setNomeCookie("nome", `${nome}`, {
+            path: "/"
+          });
+
+          setBairroCookie("bairro", `${bairro}`, {
+            path: "/"
+          });
+
+          setDataNasCookie("dataNasc", `${dataNas}`, {
+            path: "/"
+          });
+
+          setCpfCookie("cpf", `${cpf}`, {
+            path: "/"
+          });
+
+          setCepCookie("cep", `${cep}`, {
+            path: "/"
+          });
+
+          setEnderecoCookie("endereco", `${endereco}`, {
+            path: "/"
+          });
+
+          setCidadeCookie("cidade", `${cidade}`, {
+            path: "/"
+          });
+
+          setUfCookie("uf", `${uf}`, {
+            path: "/"
+          });
+
+          setNomeCookie("nome", `${nome}`, {
+            path: "/"
+          });
+
+          alert('Dados salvos com sucesso !')
+        }
+      } else {
+        alert('CPF Invalido');
+      }
+
+    },
+    [bairro, cep, cidade, cpf, dataNas, endereco, nome, setBairroCookie, setCepCookie, setCidadeCookie, setCpfCookie, setEnderecoCookie, setNomeCookie, setUfCookie, setDataNasCookie, uf],
+  );
+
+
 }
 
