@@ -161,3 +161,5 @@ npm i web-vitals
 ![img11](https://user-images.githubusercontent.com/78483210/144642296-0bff07d1-fc07-4be2-8120-38935f8cbb1c.png)
 
 ### Happy Hacking !! 🖥️ ⌨️ 📓 🎧 🚀
+
+#### Deploy no Netlify  https://gcb-teste-frontend.netlify.app/
