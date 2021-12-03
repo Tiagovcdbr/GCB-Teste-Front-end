@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from 'react';
 import { useCookies } from 'react-cookie';
 import { FiArrowLeft } from 'react-icons/fi';
-// import { validate } from 'gerador-validador-cpf';
+import { validate } from 'gerador-validador-cpf';
 import { Link } from 'react-router-dom';
 
 import { Container } from './styles';
@@ -25,7 +25,8 @@ const Home = () => {
   const [ufCookie, setUfCookie] = useCookies(["uf"]);
   const [cpfCookie, setCpfCookie] = useCookies(["cpf"]);
   const [cepCookie, setCepCookie] = useCookies(["cep"]);
-
+  
+  // Inserindo o cep as seguintes informações deverão retornar como mostra abaixo
   interface cepResponse {
     data: {
       bairro: string;
