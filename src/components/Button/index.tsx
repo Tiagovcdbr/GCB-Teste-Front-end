@@ -12,6 +12,9 @@ const Button: React.FC<IButtonProps> = ({
   hasShadow,
   ...rest
 }) => {
+  /* Todo Container criado abaixo é exportado com styled components
+   para poder receber a estilização dentro do próprio 
+   component, mas pode criado um documento a parte */
   return (
     <Container iconOnly={iconOnly} hasShadow={hasShadow} {...rest}>
       {children}
