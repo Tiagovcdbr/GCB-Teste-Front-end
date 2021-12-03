@@ -93,7 +93,7 @@ Se parar o mouse sobre a const que está na linha 1, aparecerá uma breve descri
 ````
 npx create-react-app my-app --template typescript
 npm start para checar se o projeto está ok
-delete alguns arquivos que por padrão serão utilizados e deixe o código do projeto limpo
+delete alguns arquivos que por padrão não serão utilizados e deixe o código do projeto limpo
 Nesse momento assumo que você ja sabe quais arquivos deletar, pois bem.
 O React tem muitas dependências e as que foram usadas citarei abaixo e como instalar
 
