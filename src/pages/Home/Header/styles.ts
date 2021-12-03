@@ -220,6 +220,17 @@ export const Container = styled.header<IContainerProps>`
         `};
     }
   }
+  li:last-child{
+    width: 110px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:4px;
+    border: white;
+    color: white;
+    cursor:pointer;
+  }
 
   @media (min-width: 1200px) {
     nav {

@@ -3,6 +3,9 @@ import 'swiper/components/pagination/pagination.min.css';
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import 'swiper/components/navigation/navigation.min.css'
+import 'swiper/components/pagination/pagination.min.css'
+
 import itemImage from '../../../assets/images/comida_1.png';
 import itemImage2 from '../../../assets/images/comida_2.png';
 import itemImage3 from '../../../assets/images/comida_3.png';

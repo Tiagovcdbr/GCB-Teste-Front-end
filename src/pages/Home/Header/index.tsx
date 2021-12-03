@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
-import { Button } from '../../../components';
+import { Link } from 'react-router-dom';
+
 import { Container } from './styles';
 // Construção do Menu Hamburguer 
 const Header: React.FC = () => {
@@ -73,7 +74,9 @@ const Header: React.FC = () => {
           </ul>
         </nav>
 
-        <Button>Register</Button>
+        <Link to="/register">
+            <li>REGISTER</li>
+        </Link>
 
         <button type="button" className="hamburguer" onClick={toggleNavigation}>
           <ul>

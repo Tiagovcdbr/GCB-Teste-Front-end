@@ -1,5 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import styled from 'styled-components';
 
 import itemImage from '../../../assets/images/blog_image_1.svg';
 import itemImage2 from '../../../assets/images/bloco_image_2.svg';
@@ -104,8 +105,6 @@ const Blog: React.FC = () => {
 };
 // Fim do Swiper slide e seus filhos
 export { Blog };
-
-import styled from 'styled-components';
 /* Estilizando o Container com o styled components dentro do próprio arquivo mas
 tem a opção de criar um arquivo ts separado para fazer isso */
 const Container = styled.section`
